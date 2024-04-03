@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+
+  }
+  header {
+    background-color: white;
+    color: #333;
+    padding: 5px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  
+
+
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to the bottom */
+    font-size: 13px;
+}
+
+
+
+  nav {
+    display: flex;
+    gap: 15px;
+
+  }
+
+  nav a {
+    color: gray;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease-out; /* Add smoother transition */
+    
+  }
+
+  nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+
+  }
+
+  /* Customizing the size of the image */
+  header img {
+    height: 40px;
+    width: auto;
+  }
+
+  /* Customizing the avatar image */
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+    /* background-color: yellow; */
+  }
+
+  .vl {
+    height: 50px; /* Set a specific height */
+    border-left: 0.05px solid #b8bdc1; /* Add border to create the vertical line */
+}
+
+.fa-solid,
+.fa {
+    font-size: 12px; /* Adjust the size as needed */
+    color: gray; /* Make the icons gray */
+}
+
+.fa-solid.fa-chevron-down {
+  font-size: 7px; /* Adjust the size as needed */
+}
+
+.avatah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+  
+
+
+  /* Toggle Switch Styles */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 20px; /* Adjust width to make it smaller */
+    height: 10px; /* Adjust height to make it smaller */
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* Slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+    width: 20px; /* Set width same as parent .switch */
+    height: 10px; /* Set height same as parent .switch */
+  }
+
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 10px; /* Adjust height to match parent .slider */
+    width: 10px; /* Adjust width to match parent .slider */
+    left: 1px; /* Adjust left position */
+    bottom: 0.3px; /* Adjust bottom position */
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(12px); /* Adjust translation */
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* main */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    left: 0px;
+    top: 0; 
+    background-color: #373a3c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+    margin-top: 60px;
+    text-overflow: ellipsis; 
+    /* border-top-right-radius: 10px; */
+
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .sidenav a:hover {
+    color: #5a7fd6;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 80%;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  /* boddy */
+
+  .content{
+    background-color: #f7f7f7;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+
+    
+  }
+  .navbar {
+    gap: 1vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    background-color: white;
+    margin: 2vw;
+  }
+  
+  .navbar a {
+    display: flex;
+    color: gray;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Make the positioning relative */
+  }
+  
+  .navbar a:hover {
+    color: #001a2e; /* Change the color to blue when hovered */
+  }
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Move the underline further down */
+    width: 100%; /* Set width to 100% to ensure it spans the entire width */
+    height: 1px;
+    background-color: #001a2e; /* Color of the underline */
+    transition: bottom 0.3s ease; /* Optional: Add transition effect */
+  }
+  
+  .navbar a:hover::after {
+    bottom: -4px; /* Move the underline further down on hover */
+  }
+  
+  .navbar a:hover::after {
+    bottom: -4px; /* Move the underline further down on hover */
+  }
+  
+.navup{
+  display: flex;
+  gap: .5vw;
+  align-items: center;
+}
+.navup a{
+  font-size: 13px;
+  color: #001a2e;
+}
+/* dropdowns */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown-btn {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  color: #18316a;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px; /* Add space for the icon */
+  border-top: 2px solid #18316a;
+  
+}
+
+/* Style the chevron icons */
+.dropdown-btn .fa-chevron-right,
+.dropdown-btn .fa-chevron-down {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0; /* Initially hide content */
+  transition: max-height 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown.active .dropdown-content {
+  max-height: 200px; /* Set max-height to show content */
+}
+/* Style the dropdown items */
+/* Style the dropdown items */
+.dropdown-content a {
+  color: #18316a;
+  padding: 24px 28px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ddd; /* Add border */
+  font-size: 13px;
+  text-decoration: underline;
+  
+}
+
+/* Remove border from the last item */
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+
+/* Change color of dropdown items on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+/* Hide the chevron-right icon when dropdown is active */
+.dropdown.active .fa-chevron-right {
+  display: none;
+}
+
+/* Hide the chevron-down icon when dropdown is inactive */
+.dropdown:not(.active) .fa-chevron-down {
+  display: none;
+}

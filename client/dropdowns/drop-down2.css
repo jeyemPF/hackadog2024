@@ -1,0 +1,90 @@
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown2 button */
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown2 button */
+  .dropdown2-btn {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    color: #18316a;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px; /* Add space for the icon */
+    border-top: 2px solid #18316a;
+    
+  }
+  
+  /* Style the chevron icons */
+  .dropdown2-btn .fa-chevron-right,
+  .dropdown2-btn .fa-chevron-down {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+  }
+  
+  /* Style the dropdown2 content (hidden by default) */
+  .dropdown2-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0; /* Initially hide content */
+    transition: max-height 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  /* Show the dropdown2 content when the dropdown2 button is clicked */
+  .dropdown2.active .dropdown2-content {
+    max-height: 200px; /* Set max-height to show content */
+  }
+  /* Style the dropdown2 items */
+  /* Style the dropdown2 items */
+  .dropdown2-content a {
+    color: #18316a;
+    padding: 24px 28px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd; /* Add border */
+    font-size: 13px;
+    text-decoration: underline;
+    
+  }
+  
+  /* Remove border from the last item */
+  .dropdown2-content a:last-child {
+    border-bottom: none;
+  }
+  
+  
+  /* Change color of dropdown2 items on hover */
+  .dropdown2-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown2 content when the dropdown2 button is clicked */
+  .dropdown2.active .dropdown2-content {
+    display: block;
+  }
+  
+  /* Hide the chevron-right icon when dropdown2 is active */
+  .dropdown2.active .fa-chevron-right {
+    display: none;
+  }
+  
+  /* Hide the chevron-down icon when dropdown2 is inactive */
+  .dropdown2:not(.active) .fa-chevron-down {
+    display: none;
+  }

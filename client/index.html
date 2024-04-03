@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course: Computer Programming</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./cpcourse.css" />
+    <link rel="stylesheet" href="./dropdowns/drop-down2.css">
+    <link rel="stylesheet" href="./gpt/header.css">
+    <link rel="stylesheet" href="./gpt/selection.css">
+
+    <link rel="icon" href="./img/lvcc-logo.png" type="image/x-icon" />
+
+
+
+
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="first-section">
+        <img src="./img/lvcc-logo.png" alt="" />
+        <nav>
+          <a href="#">HOME</a>
+          <a href="#">DASHBOARD</a>
+          <a href="#">MY COURSES</a>
+        </nav>
+      </div>
+
+      <div class="second-section">
+        <!-- Font Awesome icons -->
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        <i class="fa-solid fa-comment"></i>
+
+        <!-- Avatar image with custom class -->
+        <div class="avatah">
+          <img src="./img/avatar.png" alt="" class="avatar" />
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="vl"></div>
+
+        <p>EDIT MODE</p>
+
+        <label class="switch">
+          <input type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="content">
+      <div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#">
+            <i
+              class="fa-solid fa-chevron-down"
+              style="font-size: 15px; margin-right: 10px; color: white"
+              ;
+            ></i
+            >General</a
+          >
+          <a href="#">Lesson 1 - Welcome to ...</a>
+          <a href="#">Lesson 2 - Data Repres...</a>
+          <a href="#">Lesson 3 - Variables a...</a>
+          <br>
+          <a href="#">
+            <i
+              class="fa-solid fa-chevron-right"
+              style="font-size: 15px; margin-right: 10px; color: white"
+              ;
+            ></i
+            >General</a
+          >
+
+          <a href="#">
+            <i
+              class="fa-solid fa-chevron-down"
+              style="font-size: 15px; margin-right: 10px; color: white"
+              ;
+            ></i
+            >General</a
+          >
+          <a href="#">Lesson 1 - Welcome to ...</a>
+          <a href="#">Lesson 2 - Data Repres...</a>
+          <a href="#">Lesson 3 - Variables a...</a>
+          <br>
+          <a href="#">
+            <i
+              class="fa-solid fa-chevron-down"
+              style="font-size: 15px; margin-right: 10px; color: white"
+              ;
+            ></i
+            >General</a
+          >
+          <a href="#">Lesson 1 - Welcome to ...</a>
+          <a href="#">Lesson 2 - Data Repres...</a>
+          <a href="#">Lesson 3 - Variables a...</a>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span
+            style="
+              font-size: 20px;
+              cursor: pointer;
+              background-color: #373a3c;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-bottom: 8px;
+            "
+            onclick="openNav()"
+          >
+            <i class="fa-solid fa-list" style="color: #ddd"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- content in the middle -->
+      <div style=" display: flex; justify-content: center; flex-direction: column;
+      margin: 0 30vw 0 18vw; gap: 5vh; ">
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        <div class="navup">
+      <a href="">COLLEGE /</a>
+      <a href="">A/Y 2023-2024 /</a>
+      <a href="">Associate in Computer Technology /</a>
+      <a href="">1st Year /</a>
+      <p style="font-size: 13px; font-weight: bold;">2nd Semester</p>
+
+    </div>
+      <h2 style="color: #373a3c;">Computer Programming I - ACT</h2>
+    </div>
+    <div style="background-color: #fff; height: 6vh; display: flex; align-items: center; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);">     
+       <div class="navbar">
+        <a href="#">Course</a>
+        <!-- <a href="#">Participants</a>
+        <a href="#">Competencies</a> -->
+      </div>
+    </div>
+<!-- Dropdown container -->
+<div class="dropdown">
+  <!-- Dropdown button with icon -->
+  <div class="dropdown-btn">
+    <i class="fas fa-chevron-right"></i>
+    <i class="fas fa-chevron-down"></i>
+    General
+  </div>
+  
+  <!-- Dropdown content -->
+  <div class="dropdown-content">
+    <!-- Dropdown items -->
+    <a href="#">Attendance</a>
+  </div>
+</div>
+
+<!-- General 2 -->
+<div class="dropdown2">
+  <!-- Dropdown button with icon -->
+  <div class="dropdown2-btn">
+    <i class="fas fa-chevron-right"></i>
+    <i class="fas fa-chevron-down"></i>
+    Lesson 1
+  </div>
+  
+  <!-- Dropdown content -->
+  <div class="dropdown2-content">
+    <!-- Dropdown items with data attributes for PDF URLs -->
+    <a href="https://drive.google.com/file/d/1vI7M9jYvMjaUAJvzTUeUyXmimuCm_4rP/view?usp=sharing" target="_blank" >Programming Java [PDF].</a>
+    <a href="https://drive.google.com/file/d/1-lZWF_jXhr5sP0NlNYz1YftyOjYSfO3l/view?usp=sharing" target="_blank" >ICT Week 2024 - PPT</a>
+    <a href="#" data-pdf="beauty_of_java.pdf">The Beauty of Java Programming</a>
+  </div>
+</div>
+
+<div class="gpt">
+  <div class="header-content">
+    <h1>LMS AI</h1>
+  </div>
+</div>
+<div class="selection-content">
+  <p class="titleSelection">Mode</p>
+  <div>
+    <input type="checkbox">Query Files</input>
+    <input type="checkbox">Search Files</input>
+  </div>
+  <div>
+  <input type="checkbox">LLM Chat(no context from files)</input>
+</div>
+</div>
+
+
+
+</div>
+
+      </div>
+
+   
+    </main>
+  
+    <script src="./script.js"></script>
+
+  </body>
+</html>
