@@ -11,13 +11,87 @@
     margin-right: 20vw;
     flex-direction: column;
     gap: 2vh;
+ 
 }
 
 .titleSelection{
     background-color: #8e8a8a;
     padding: 1vh;
     border-radius: 10px;
-    margin-right: 24vw;
+    margin-right:23vw;
     font-weight: bold;
 }
+
+/* custom */
+
+/* Style for the custom checkboxes */
+.custom-checkbox {
+    display: inline-block;
+    /* width: 20px;
+    height: 20px; */
+   background-color: #8e8a8a;
+    border-radius: 50%; /* Making it a circle */
+    cursor: pointer;
+    border: none; /* Removing the border */
+
+}
+
+/* Style for the custom checkboxes when checked */
+.custom-checkbox:checked {
+    background-color:#444444;
+
+}
+
+/* Style for the label text */
+.checkbox-label {
+    /* margin-left: 5px; */
+    font-size: 15px;
+    background-color: #8e8a8a;
+    padding: 7px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+
+
+.custom-checkbox2 {
+    display: inline-block;
+    /* width: 20px;
+    height: 20px; */
+    background-color: #ccc;
+    border-radius: 200px;
+    cursor: pointer;
+  
+}
+
+/* Style for the custom checkboxes when checked */
+.custom-checkbox2:checked {
+    background-color: #007bff;
+}
+
+/* Style for the label text */
+.checkbox-label2 {
+    /* margin-left: 5px; */
+    font-size: 16px;
+    background-color:#8e8a8a;
+    padding: 7px;
+    border-radius: 10px;
+    width: 120px;
+
+}
+
+.radio-container{
+    display: flex;
+    gap: 10px;
+}
+
+.radio-label{
+    background-color:#8e8a8a;
+    padding: 7px;
+    border-radius: 10px;
+    margin-right:10vw;
+
+}
+
 

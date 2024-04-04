@@ -99,7 +99,10 @@
     gap: 15px;
 }
   
-
+/* .content-middle{
+  display: flex;
+  flex-direction: column-reverse;
+} */
 
   /* Toggle Switch Styles */
   .switch {
@@ -217,6 +220,7 @@
     background-color: #f7f7f7;
     padding-left: 10px;
     padding-right: 10px;
+   
   
 
     
